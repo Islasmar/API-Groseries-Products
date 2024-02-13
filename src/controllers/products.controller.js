@@ -26,7 +26,6 @@ export const insertOne = (req, res) => {
         .catch(err => res.json({ status: "Server unavailable" }));
 };
 
-
 export const updateOne = (req, res) => {
     console.log(req.body)
     productDAO.updateOne(req.params.barcode, req.body)
@@ -37,7 +36,6 @@ export const updateOne = (req, res) => {
         })
         .catch(err => res.json({ status: "Server unavailable" }));
 };
-
 
 
 export const deleteOne = (req, res) => {
